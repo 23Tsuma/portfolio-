@@ -6,9 +6,9 @@ import { Inter } from "next/font/google";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Leonard Tsuma | Media Manager & Funnel Strategist",
+  title: "Leonard Tsuma | Digital Marketing, Web & Customer Systems",
   description:
-    "Digital media management focused on Meta Ads, conversion funnels, GoHighLevel automation, and measurable lead journeys.",
+    "Leonard Tsuma's portfolio featuring Facebook Events and marketing flyers, a live website project, and loan and customer portfolio systems experience.",
 };
 
 export default function RootLayout({

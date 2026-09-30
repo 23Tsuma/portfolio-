@@ -8,7 +8,6 @@ import {
   CircleDollarSign,
   ClipboardList,
   Facebook,
-  Filter,
   Instagram,
   Mail,
   Megaphone,
@@ -23,40 +22,73 @@ const capabilities = [
   {
     icon: Megaphone,
     number: "01",
-    title: "Meta campaign strategy",
-    text: "Campaign structure, audience research, creative testing, retargeting, and considered budget decisions.",
-    tags: ["Meta Ads", "Creative tests", "Retargeting"],
+    title: "Campaign content & promotion",
+    text: "Promotional flyers and Facebook Events that present travel offers clearly and give people an easy way to discover an event.",
+    tags: ["Facebook Events", "Marketing flyers", "Travel offers"],
   },
   {
-    icon: Filter,
+    icon: MousePointer2,
     number: "02",
-    title: "Funnels that keep moving",
-    text: "A clear path from ad click to opt-in, thank-you page, booking, and the next best action.",
-    tags: ["Landing pages", "Lead forms", "Conversion paths"],
+    title: "Websites & landing pages",
+    text: "A live website project for Mum’s Backpackers, built to give the business an online presence.",
+    tags: ["Website build", "Live project"],
   },
   {
-    icon: Workflow,
+    icon: ClipboardList,
     number: "03",
-    title: "GoHighLevel follow-up",
-    text: "Timely, useful automations that help new leads get a reply and teams stay on top of opportunities.",
-    tags: ["Workflows", "Pipelines", "SMS + email"],
+    title: "Customer & loan systems",
+    text: "Hands-on experience working with loan management systems and customer portfolio management systems.",
+    tags: ["Loan management", "Customer portfolios", "Customer records"],
   },
-];
-
-const funnelSteps = [
-  { icon: Facebook, label: "Meta ad", detail: "Stop the scroll" },
-  { icon: MousePointer2, label: "Landing page", detail: "Make the offer clear" },
-  { icon: ClipboardList, label: "Lead form", detail: "Capture intent" },
-  { icon: Workflow, label: "GHL workflow", detail: "Respond right away" },
-  { icon: MessageCircle, label: "Appointment", detail: "Keep the conversation" },
-  { icon: CircleDollarSign, label: "Customer", detail: "Track the outcome" },
 ];
 
 const workflowItems = [
-  "Instant SMS + email confirmation",
-  "Lead assigned to the right pipeline stage",
-  "Helpful follow-up if there’s no reply",
-  "Appointment reminders and no-show check-in",
+  "Capture the customer and inquiry context",
+  "Keep the current status easy to find",
+  "Make the next follow-up step visible",
+  "Review customer records across the portfolio",
+];
+
+const selectedWork = [
+  {
+    number: "01",
+    label: "TRAVEL CAMPAIGNS · MONIKA TOURS & SAFARIS",
+    title: "Marketing flyers & Facebook Events",
+    description:
+      "Created travel marketing flyers for Monika Tours & Safaris. I also worked with Jirani Smart’s Facebook Events page; the supplied screenshot shows Tsavo East weekend escape listings and their promotional creative.",
+    icon: Megaphone,
+    visualClass: "event-visual",
+    visualLabel: "TRAVEL PROMOTION",
+    visualTitle: "Flyers +\nFacebook Events",
+    href: "https://drive.google.com/drive/folders/1krF10yjJTLxmKdvEcNty6-9zAEzD4PEe?usp=sharing",
+    linkText: "View marketing flyers",
+  },
+  {
+    number: "02",
+    label: "WEBSITE · MUM’S BACKPACKERS",
+    title: "A live website I built",
+    description:
+      "Built the Mum’s Backpackers website. Explore the live site at the link below.",
+    icon: MousePointer2,
+    visualClass: "website-visual",
+    visualLabel: "LIVE WEBSITE",
+    visualTitle: "Mum’s\nBackpackers",
+    href: "http://mumsbackpackers.com/",
+    linkText: "Visit mumsbackpackers.com",
+  },
+  {
+    number: "03",
+    label: "CUSTOMER SYSTEMS · JIRANI SMART",
+    title: "Loan & customer portfolio systems",
+    description:
+      "Worked with loan management systems and customer portfolio management systems. This brings practical familiarity with structured customer and account workflows; no CRM platform or performance figures are claimed here.",
+    icon: ClipboardList,
+    visualClass: "systems-visual",
+    visualLabel: "CUSTOMER OPERATIONS",
+    visualTitle: "Loan management\n+ customer portfolios",
+    href: "#systems",
+    linkText: "Explore my systems experience",
+  },
 ];
 
 export default function Home() {
@@ -70,7 +102,7 @@ export default function Home() {
         <nav className="main-nav" aria-label="Main navigation">
           <a href="#approach">Approach</a>
           <a href="#systems">Systems</a>
-          <a href="#sample">Sample campaign</a>
+          <a href="#work">Selected work</a>
         </nav>
         <a className="header-cta" href="mailto:festusleonard996@gmail.com">
           Let&apos;s talk <ArrowUpRightIcon />
@@ -79,38 +111,35 @@ export default function Home() {
 
       <section id="home" className="hero-section page-width">
         <div className="hero-copy">
-          <div className="eyebrow"><span className="status-dot" /> MEDIA BUYING · FUNNELS · AUTOMATION</div>
-          <h1>Clicks are a start.<br /><span>Growth is the goal.</span></h1>
+          <div className="eyebrow"><span className="status-dot" /> DIGITAL MARKETING · WEB · CUSTOMER SYSTEMS</div>
+          <h1>Good marketing.<br /><span>Clear next steps.</span></h1>
           <p className="hero-intro">
-            I&apos;m Leonard, a digital media manager focused on connecting paid social,
-            conversion-focused funnels, and thoughtful follow-up—so every lead has a
-            clear next step.
+            I&apos;m Leonard. I create marketing materials, work with Facebook Events,
+            build websites, and have hands-on experience with loan and customer portfolio
+            management systems.
           </p>
           <div className="hero-actions">
-            <a className="button-primary" href="mailto:festusleonard996@gmail.com">Let&apos;s build your funnel <ArrowRight size={17} /></a>
-            <a className="text-link" href="#sample">Explore the sample <ArrowDown size={16} /></a>
+            <a className="button-primary" href="mailto:festusleonard996@gmail.com">Let&apos;s work together <ArrowRight size={17} /></a>
+            <a className="text-link" href="#work">See selected work <ArrowDown size={16} /></a>
           </div>
           <div className="hero-proof">
             <div className="proof-avatars"><span>FB</span><span>G</span><span>↗</span></div>
-            <p><strong>Traffic → lead → sale</strong><br />One connected growth system</p>
+            <p><strong>Campaign → website → customer</strong><br />Practical digital experience</p>
           </div>
         </div>
 
         <div className="dashboard-wrap" aria-label="Illustrative campaign dashboard">
           <div className="orbit orbit-one" /><div className="orbit orbit-two" />
-          <div className="mini-dashboard">
-            <div className="dashboard-topline"><span className="dashboard-title"><span className="dashboard-mark"><BarChart3 size={15} /></span> Campaign overview</span><span className="live-label"><i /> SAMPLE VIEW</span></div>
-            <div className="dashboard-caption">LEAD GENERATION <span>↗ Example only</span></div>
-            <div className="dashboard-total">Weekly snapshot <span>Illustrative</span></div>
-            <div className="chart-area">
-              <div className="chart-y-labels"><span>120</span><span>80</span><span>40</span><span>0</span></div>
-              <div className="chart-plot"><div className="chart-grid"><i /><i /><i /><i /></div><svg viewBox="0 0 440 155" preserveAspectRatio="none" role="img" aria-label="Illustrative upward trend line"><defs><linearGradient id="chartFill" x1="0" x2="0" y1="0" y2="1"><stop offset="0%" stopColor="#c7f36b" stopOpacity=".25" /><stop offset="100%" stopColor="#c7f36b" stopOpacity="0" /></linearGradient></defs><path d="M0 130 C32 118 42 122 66 105 S108 104 129 93 S162 102 191 76 S226 85 250 67 S289 72 311 54 S346 66 367 36 S402 42 440 15 V155 H0Z" fill="url(#chartFill)" /><path d="M0 130 C32 118 42 122 66 105 S108 104 129 93 S162 102 191 76 S226 85 250 67 S289 72 311 54 S346 66 367 36 S402 42 440 15" fill="none" stroke="#c7f36b" strokeWidth="3" vectorEffect="non-scaling-stroke" /></svg><div className="chart-x-labels"><span>MON</span><span>TUE</span><span>WED</span><span>THU</span><span>FRI</span><span>SAT</span><span>SUN</span></div></div>
-            </div>
-            <div className="dashboard-metrics"><div><span>Spend</span><strong>$—</strong><small>Set by campaign plan</small></div><div><span>Leads</span><strong>—</strong><small>Tracked in CRM</small></div><div><span>Cost / lead</span><strong>$—</strong><small>Measured, not assumed</small></div></div>
-            <div className="dashboard-note"><Sparkles size={15} /><span>Optimize the bottleneck, not just the ad.</span></div>
+          <div className="mini-dashboard event-summary">
+            <div className="dashboard-topline"><span className="dashboard-title"><span className="dashboard-mark"><Facebook size={15} /></span> Jirani Smart</span><span className="live-label"><i /> FACEBOOK EVENTS</span></div>
+            <div className="dashboard-caption">UPCOMING EVENT SERIES <span>From supplied screenshot</span></div>
+            <div className="dashboard-total">Tsavo East weekend escape <span>Travel promotion</span></div>
+            <div className="event-art"><span className="event-sun" /><span className="event-hill event-hill-back" /><span className="event-hill event-hill-front" /><span className="event-vehicle">SAFARI<br />ESCAPE</span><div className="event-art-caption">LAST-MINUTE WEEKEND<br />ESCAPE!</div></div>
+            <div className="event-dates"><div><span>EVENT DATES SHOWN</span><strong>Oct 6 · Oct 13 · Oct 20</strong></div><div><span>TIME</span><strong>7 PM</strong></div></div>
+            <div className="dashboard-note"><Sparkles size={15} /><span>Promotional event listings and creative—not performance metrics.</span></div>
           </div>
-          <div className="floating-tag tag-meta"><span><Instagram size={14} /></span> META ADS <i>↗</i></div>
-          <div className="floating-tag tag-funnel"><span><Workflow size={14} /></span> LEAD FOLLOW-UP <i>✓</i></div>
+          <div className="floating-tag tag-meta"><span><MousePointer2 size={14} /></span> WEBSITE PROJECT <i>↗</i></div>
+          <div className="floating-tag tag-funnel"><span><ClipboardList size={14} /></span> CUSTOMER SYSTEMS <i>✓</i></div>
         </div>
         <a className="scroll-cue" href="#approach"><span>SCROLL TO EXPLORE</span><ArrowDown size={14} /></a>
       </section>
@@ -118,8 +147,8 @@ export default function Home() {
       <section id="approach" className="approach-section section-pad">
         <div className="page-width">
           <div className="section-heading">
-            <div><span className="section-kicker">A CONNECTED APPROACH</span><h2>Make every step<br />work <span>harder.</span></h2></div>
-            <p>Strong campaigns aren&apos;t a collection of disconnected tools. They&apos;re a system built around the customer journey—and the numbers that show where to improve.</p>
+            <div><span className="section-kicker">WHAT I BRING</span><h2>Useful skills.<br /><span>Real examples.</span></h2></div>
+            <p>My experience spans digital promotion, a live website project, and customer-facing operational systems. The selected work below links to the available evidence.</p>
           </div>
           <div className="capability-grid">
             {capabilities.map(({ icon: Icon, number, title, text, tags }) => (
@@ -136,47 +165,68 @@ export default function Home() {
       <section id="systems" className="funnel-section section-pad">
         <div className="page-width">
           <div className="section-heading funnel-heading">
-            <div><span className="section-kicker">THE CUSTOMER JOURNEY</span><h2>From first click<br />to <span>follow-through.</span></h2></div>
-            <p>A funnel should make the next step feel natural for a prospect—and make every handoff visible to the team.</p>
+            <div><span className="section-kicker">CUSTOMER & LOAN OPERATIONS</span><h2>Keep customer work<br /><span>organized.</span></h2></div>
+            <p>I have worked with loan management systems and customer portfolio management systems—experience that translates to careful customer record handling and structured workflows.</p>
           </div>
           <div className="journey-track">
-            {funnelSteps.map(({ icon: Icon, label, detail }, index) => (
+            {[
+              { icon: Facebook, label: "Promotion", detail: "Campaigns & events" },
+              { icon: MousePointer2, label: "Website", detail: "A clear online presence" },
+              { icon: ClipboardList, label: "Customer record", detail: "Loan system experience" },
+              { icon: Workflow, label: "Portfolio view", detail: "Customer portfolio tools" },
+              { icon: MessageCircle, label: "Next action", detail: "Keep work moving" },
+              { icon: CircleDollarSign, label: "Outcome", detail: "Follow through" },
+            ].map(({ icon: Icon, label, detail }, index) => (
               <div className="journey-step" key={label}>
                 <div className="journey-node"><Icon size={19} /><span>0{index + 1}</span></div>
                 <h3>{label}</h3><p>{detail}</p>
-                {index < funnelSteps.length - 1 && <ChevronRight className="journey-arrow" size={17} />}
+                {index < 5 && <ChevronRight className="journey-arrow" size={17} />}
               </div>
             ))}
           </div>
           <div className="system-details">
             <div className="workflow-card">
-              <div className="workflow-heading"><span className="workflow-icon"><Workflow size={19} /></span><div><span>GOHIGHLEVEL AUTOMATION</span><h3>Fast follow-up, with a human touch.</h3></div><span className="workflow-badge">WORKFLOW EXAMPLE</span></div>
-              <div className="workflow-trigger"><span className="trigger-dot" /> TRIGGER <strong>New lead form submitted</strong></div>
+              <div className="workflow-heading"><span className="workflow-icon"><Workflow size={19} /></span><div><span>TRANSFERABLE WORKFLOW THINKING</span><h3>Keep the customer context connected.</h3></div><span className="workflow-badge">PROCESS OVERVIEW</span></div>
+              <div className="workflow-trigger"><span className="trigger-dot" /> EXPERIENCE <strong>Loan + customer portfolio systems</strong></div>
               <div className="workflow-list">{workflowItems.map((item, index) => <div className="workflow-item" key={item}><span>{index + 1}</span>{item}<Check size={15} /></div>)}</div>
-              <div className="pipeline-line"><span>NEW LEAD</span><i /><span>CONTACTED</span><i /><span>QUALIFIED</span><i /><span>BOOKED</span><i /><span>WON / LOST</span></div>
+              <div className="pipeline-line"><span>INQUIRY</span><i /><span>RECORD</span><i /><span>STATUS</span><i /><span>NEXT STEP</span><i /><span>FOLLOW-UP</span></div>
             </div>
-            <div className="system-aside"><span className="aside-icon"><Radio size={18} /></span><span className="section-kicker">BUILT TO BE MEASURED</span><h3>Don&apos;t let good leads go quiet.</h3><p>Track the journey from first touch to outcome. Use response, booking, and close rates to find the real constraint—not just the easiest metric to see.</p><a href="#sample">See the reporting mindset <ArrowDownRight size={16} /></a></div>
+            <div className="system-aside"><span className="aside-icon"><Radio size={18} /></span><span className="section-kicker">HONEST ABOUT THE TOOLS</span><h3>Real systems experience. No inflated claims.</h3><p>I have not listed a specific CRM vendor or GoHighLevel implementation. My direct experience is with loan management and customer portfolio management systems.</p><a href="#work">See the project details <ArrowDownRight size={16} /></a></div>
           </div>
         </div>
       </section>
 
-      <section id="sample" className="sample-section section-pad">
-        <div className="page-width sample-layout">
-          <div className="sample-copy"><span className="sample-pill"><span /> SPEC CAMPAIGN · EXAMPLE ONLY</span><span className="section-kicker">A PRACTICAL PLAN, NOT A CLAIMED RESULT</span><h2>Local clinic<br />consultation campaign.</h2><p>A sample strategy showing how I would connect a lead-generation campaign, landing page, and GoHighLevel follow-up. No client results or performance data are being represented here.</p>
-            <div className="sample-goal"><span><CircleDollarSign size={17} /></span><div><small>CAMPAIGN OBJECTIVE</small><strong>Generate qualified consultation bookings</strong></div></div>
-            <div className="sample-steps"><div><span>01</span><p><strong>Test the message</strong>Build distinct creative angles around trust, convenience, and the consultation offer.</p></div><div><span>02</span><p><strong>Reduce friction</strong>Keep the landing page focused, mobile-friendly, and aligned to the ad promise.</p></div><div><span>03</span><p><strong>Close the loop</strong>Route new leads into a fast, clear follow-up and track booked appointments.</p></div></div>
+      <section id="work" className="sample-section section-pad">
+        <div className="page-width">
+          <div className="section-heading work-heading">
+            <div><span className="section-kicker">SELECTED WORK & EVIDENCE</span><h2>Work you can<br /><span>actually explore.</span></h2></div>
+            <p>Three examples across campaign promotion, web development, and customer systems. Links open the live website and flyer folder; no unverified campaign results are presented.</p>
           </div>
-          <div className="report-card">
-            <div className="report-head"><div><span className="section-kicker">CAMPAIGN SCORECARD</span><h3>What I&apos;d measure</h3></div><span className="report-stamp">PLANNING TEMPLATE</span></div>
-            <div className="report-rows"><div><span>Meta spend</span><strong>Actual spend</strong><small>Budget pacing</small></div><div><span>CTR + landing-page views</span><strong>Attention &amp; intent</strong><small>Creative / page diagnosis</small></div><div><span>Leads + cost per lead</span><strong>Acquisition efficiency</strong><small>Lead volume and quality</small></div><div><span>Appointments + show rate</span><strong>Sales readiness</strong><small>Follow-up effectiveness</small></div><div><span>Customers + revenue</span><strong>Business outcome</strong><small>ROAS when revenue tracking is available</small></div></div>
-            <div className="report-insight"><BarChart3 size={18} /><p><strong>Next optimization:</strong> Compare lead quality and booking rate by creative and audience before increasing spend. A cheap lead is only useful if it moves forward.</p></div>
-            <div className="report-foot"><span><span className="report-dot" /> Illustrative planning framework</span><span>No fabricated metrics</span></div>
+          <div className="case-grid">
+            {selectedWork.map(({ number, label, title, description, icon: Icon, visualClass, visualLabel, visualTitle, href, linkText }) => (
+              <article className="case-card" key={number}>
+                <div className={`case-visual ${visualClass}`}>
+                  <div className="case-visual-top"><span><Icon size={15} /></span><span>{visualLabel}</span><span>{number}</span></div>
+                  <strong>{visualTitle.split("\n").map((line) => <span key={line}>{line}</span>)}</strong>
+                  <div className="case-visual-bottom"><span /> <span /> <span /></div>
+                </div>
+                <div className="case-content">
+                  <span className="case-label">{label}</span>
+                  <h3>{title}</h3>
+                  <p>{description}</p>
+                  <a href={href} target={href.startsWith("http") ? "_blank" : undefined} rel={href.startsWith("http") ? "noreferrer" : undefined}>
+                    {linkText} <ArrowRight size={15} />
+                  </a>
+                </div>
+              </article>
+            ))}
           </div>
+          <p className="evidence-note"><Sparkles size={15} /> Performance figures are not included because no verified results were provided. The Jirani Smart Facebook Events screenshot was supplied as supporting evidence.</p>
         </div>
       </section>
 
       <section className="process-section section-pad">
-        <div className="page-width process-inner"><div><span className="section-kicker">HOW I OPTIMIZE</span><h2>Find the friction.<br /><span>Test with purpose.</span></h2></div><div className="process-flow"><div><span>01</span><strong>Spot the bottleneck</strong><small>Read the whole funnel</small></div><ArrowRight /><div><span>02</span><strong>Form a hypothesis</strong><small>Change one key variable</small></div><ArrowRight /><div><span>03</span><strong>Measure the impact</strong><small>Use meaningful metrics</small></div><ArrowRight /><div><span>04</span><strong>Iterate or scale</strong><small>Keep what moves outcomes</small></div></div><p className="process-note"><span><Check size={15} /></span>Creative → audience → offer → landing page → follow-up. Diagnose first; don&apos;t change everything at once.</p></div>
+        <div className="page-width process-inner"><div><span className="section-kicker">MY EXPERIENCE</span><h2>Digital work with<br /><span>customer context.</span></h2></div><div className="process-flow"><div><span>01</span><strong>Travel promotions</strong><small>Flyers and event listings</small></div><ArrowRight /><div><span>02</span><strong>Website project</strong><small>Mum’s Backpackers</small></div><ArrowRight /><div><span>03</span><strong>Loan systems</strong><small>Loan management</small></div><ArrowRight /><div><span>04</span><strong>Customer portfolios</strong><small>Portfolio management systems</small></div></div><p className="process-note"><span><Check size={15} /></span>Campaign materials, a live website, and customer and loan management systems experience.</p></div>
       </section>
 
       <footer id="contact" className="contact-section">
